@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sandwich %>
+
+<div>
+  <%= link_to "Edit this sandwich", edit_sandwich_path(@sandwich) %> |
+  <%= link_to "Back to sandwiches", sandwiches_path %>
+
+  <%= button_to "Destroy this sandwich", @sandwich, method: :delete %>
+</div>
